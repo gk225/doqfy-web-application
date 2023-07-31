@@ -27,4 +27,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 # doqfy-web-application
 
-![ss](https://github.com/gk225/doqfy-web-application/assets/70736080/d3dfa67c-9e8e-400d-a3b5-1899a0a276c7)
+![image](https://github.com/gk225/doqfy-web-application/assets/70736080/558ccbd8-1ac2-4f8e-931c-6c248b75ee5e)
