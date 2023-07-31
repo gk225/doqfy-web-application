@@ -1,0 +1,10 @@
+<div class="my-3">
+    <mat-card class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 welcome-message">
+    <div class="d-flex justify-content-start align-items-start msg">
+        <p>👋 Welcome back, <span class="userName">{{ userName }}</span>!</p>
+    </div>
+    <div class="dateTime d-flex justify-content-start align-items-start">
+        <span>{{ currentDate | date: 'dd MMMM yyyy' }} <span>- {{ currentDate | date: 'EEEE' }}</span></span>
+    </div>
+    </mat-card>
+</div>

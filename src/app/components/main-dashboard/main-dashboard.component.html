@@ -1,0 +1,120 @@
+<div class="container-fluid g-0 cont">
+
+<app-tool-bar></app-tool-bar>
+
+<div class="d-flex mt-3">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-3 main">
+    <app-welcome [userName]="loggedInUserName"></app-welcome>
+
+    <app-wallet-info [balance]="balanceAmount"></app-wallet-info>
+
+    <app-pending-items-card></app-pending-items-card>
+  </div>
+
+  <div class="col-10 col-sm-3 col-md-5 col-lg-5 col-xl-9">
+    <app-frequently-used-items></app-frequently-used-items>
+    <div class="d-flex justify-content-between dropDown">
+        <mat-form-field class="list" appearance="outline">
+            <mat-label>All Branches</mat-label>
+          <mat-select>
+            <mat-option value="option1">Option 1</mat-option>
+            <mat-option value="option2">Option 2</mat-option>
+            <mat-option value="option3">Option 3</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <span class="d-flex justify-content-end">
+          <mat-form-field class="custom"  appearance="outline">
+            <mat-label>Custom Range</mat-label>
+            <mat-select>
+              <mat-option value="range1">Range 1</mat-option>
+              <mat-option value="range2">Range 2</mat-option>
+              <mat-option value="range3">Range 3</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Completely disabled</mat-label>
+            <input matInput [matDatepicker]="dp1">
+            <mat-datepicker-toggle matSuffix [for]="dp1"></mat-datepicker-toggle>
+            <mat-datepicker #dp1></mat-datepicker>
+          </mat-form-field>
+        </span>
+       
+    </div>
+
+    <mat-card class="orderDetails">
+      <div class="d-flex justify-content-between head">
+        <h2>Oder Details</h2>
+        <a href="#">View All</a>
+      </div>
+
+      <div class="d-flex justify-content-between head">
+        <div *ngFor="let box of boxes" class="box">
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="number">{{ box.number }}</span>
+            <img class="img" src="assets/images/{{ box.icon }}.png" alt="img" />
+          </div>
+
+          <p class="sentence">{{ box.sentence }}</p>
+
+          <div class="d-flex align-items-center">
+            <img class="smallImg" src="assets/images/{{ box.smallIcon }}.png" alt="Img"/>
+            <span class="small-number">{{ box.smallIcon == "up" ? "+" : "-" }}2.4%</span>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+
+
+    <div class="d-flex justify-content-between eData">
+      <div class="col-10 col-sm-10 col-md-10 col-lg-5 col-xl-5">
+        <mat-card>
+          <h2 class="heading">E-Sign Count</h2>
+
+          <div class="d-flex eDetails">
+            <div class="col-6">
+              <div class="d-flex mt-3">
+                <span class="eInfo"><span class="grey-box"></span>Initiated</span>
+                <span class="eText"><span class="pink-box"></span>Pending</span>
+              </div>
+
+              <div class="d-flex mt-4">
+                <span class="eInfo"><span class="purple-box"></span>Signed</span>
+                <span class="eText"><span class="marron-box"></span>Expired</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div id="eSign" class="donut-chart"></div>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+
+      <div class="col-10 col-sm-10 col-md-10 col-lg-5 col-xl-5">
+        <mat-card>
+          <h2 class="heading">E-Sign Count</h2>
+
+          <div class="d-flex eDetails">
+            <div class="col-6">
+              <div class="d-flex mt-3">
+                <span class="eInfo"><span class="grey-box"></span>Initiated</span>
+                <span class="eText"><span class="pink-box"></span>Pending</span>
+              </div>
+
+              <div class="d-flex mt-4">
+                <span class="eInfo"><span class="purple-box"></span>Signed</span>
+                <span class="eText"><span class="marron-box"></span>Expired</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div id="eStamp" class="donut-chart"></div>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>

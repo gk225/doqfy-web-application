@@ -1,0 +1,174 @@
+
+.mat-toolbar{
+  background-color: #FFFFFF;
+  justify-content: space-between; 
+}
+
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.logo{
+  float: left;
+  margin-left: 2rem;
+  margin-right: 4rem;
+  height: 7rem;
+  width: 7rem;
+}
+
+a{
+  margin-right: 2.7rem;
+  font-size: 22px;
+  cursor: pointer;
+}
+.coming-soon {
+  width: 5rem;
+  height: 1.5rem;
+  border: 1px solid #cecdcde7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-left: 10px; 
+}
+
+.coming-soon p {
+  margin: 1rem;
+  color: purple;
+  font-size: 10px;
+}
+
+.disabled-invoice {
+  color: grey;
+  pointer-events: none;
+  cursor: not-allowed;
+  text-decoration: none;
+  margin-right: 1%;
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 4.2rem;
+  cursor: pointer;
+  span{
+    font-size: 22px;
+  }
+}
+
+.dropdown-link mat-icon {
+  margin-left: 5px;
+  position: absolute;
+  bottom: 2px;
+  right: -1.8rem;
+}
+
+.notification-icon {
+  margin-left: 7rem;
+  margin-right: 3rem;
+  cursor: pointer;
+  mat-icon{
+    font-size: 28px;
+    color: purple;
+  }
+}
+
+.arrow-icon {
+  vertical-align: middle;
+  margin-right: 5px;
+  height: 1.2rem;
+}
+
+.user-dropdown {
+  display: inline-block;
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  padding: 4px 2px 4px 10px;
+  margin-right: 4rem;
+  cursor: pointer;
+  .user-name{
+    margin-right: 0.7rem;
+  }
+}
+
+.user-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: purple; 
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+// .mat-toolbar-row {
+//   width: 100%; 
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.userM, .serviceM{
+  font-size: 17px;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF ;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.social-icons {
+  img{
+    width: 40px; 
+    height: 40px; 
+    margin-right: 1rem;
+    color: #ccc;
+  }
+  margin-left: 2.8rem;
+}
+
+.footer-text {
+  color: #939497;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  .mat-sidenav {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .img,.btn{
+    margin-top: -2rem;
+  }
+}
+.navLine{
+  height: 4rem;
+}
+

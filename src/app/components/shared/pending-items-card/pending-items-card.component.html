@@ -1,0 +1,16 @@
+<mat-card class="mt-4">
+    <h1>Pending Actions</h1>
+    <div class="scrollable-content">
+      <div class="item my-3"  *ngFor="let item of pendingItems">
+        <div class="d-flex justify-content-between itemDetails">
+            <span class="item-header">#{{ item.itemNumber }}</span>
+            <span class="days-ago">{{ item.daysAgo }} days ago</span>
+        </div>
+
+        <div class="item-content">
+          <div class="upload-info">{{ item.filesWaiting }} files are waiting to be uploaded</div>
+        </div>
+      </div>
+    </div>
+</mat-card>
+  

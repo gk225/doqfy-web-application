@@ -1,0 +1,49 @@
+<mat-toolbar class="d-flex">
+  <mat-toolbar-row>
+    <img class="logo" src="assets/images/doqfy.png" alt="img" />
+
+    <div class="d-flex align-items-center">
+      <span [matMenuTriggerFor]="serviceMenu" class="dropdown-link">
+        <span>Service</span>
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </span>
+      <mat-menu #serviceMenu="matMenu">
+        <button class="serviceM" mat-menu-item>Financial Service</button>
+        <button mat-menu-item class="serviceM">Corporate Service</button>
+      </mat-menu>
+
+      <a mat-button [routerLink]="">User Management</a>
+      <a mat-button [routerLink]="">My Orders</a>
+      <a mat-button [routerLink]="">Reports</a>
+      <a mat-button [routerLink]="">Stamp Inventory</a>
+      <a mat-button [routerLink]="">Bar Codes</a>
+      <a href="#" class="disabled-invoice">Invoice</a>
+      <span class="coming-soon"><p>Coming Soon</p></span>
+      <span class="notification-icon">
+        <mat-icon>notifications</mat-icon>
+      </span>
+      <div class="user-dropdown">
+        <div [matMenuTriggerFor]="userMenu">
+          <mat-icon class="arrow-icon">keyboard_arrow_down</mat-icon>
+          <span class="user-name">{{ userName }}</span>
+          <span class="user-icon">{{ userNameFirstLetter }}</span>
+        </div>
+        <mat-menu #userMenu="matMenu">
+          <button mat-menu-item class="userM">Logout</button>
+        </mat-menu>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+<footer class="footer ">
+      <div class="social-icons">
+        <a href="#"><img src="assets/images/fb.png" alt="Facebook"></a>
+        <a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="assets/images/linkedIn.png" alt="LinkedIn"></a>
+      </div>
+      <div class="footer-text">@2023 All Rights Reserved</div>
+</footer>
+
